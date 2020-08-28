@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Home extends CI_Controller
+class Login extends CI_Controller
 {
     public function __construct()
     {
@@ -23,7 +23,7 @@ class Home extends CI_Controller
             'title' => $this->lang->line('home_page_title'),
         );*/
         $this->load->view('base/header');
-        $this->load->view('master/index');
+        $this->load->view('master/login');
         $this->load->view('base/footer');
     }
   

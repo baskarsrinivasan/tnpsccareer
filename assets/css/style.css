@@ -35,6 +35,7 @@ Author URI: http://themeforest.net/user/Ansonika/
 /*============================================================================================*/
 /* 0. ICONS */
 /*============================================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @font-face {
   font-family: 'custom_icons';
   src: url("icon_fonts/font/custom_icons.eot?34716924");
@@ -1619,7 +1620,7 @@ body {
   background: #fff;
   font-size: 14px;
   font-size: 0.875rem;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #444;
 }
 
@@ -2272,7 +2273,7 @@ ul#top_menu > li a.btn_access.green:hover {
 @media (max-width: 767px) {
   .hero_single .opacity-mask h1, .hero_single .opacity-mask h3 {
     font-size: 36px;
-    font-size: 2.25rem;
+    font-size: 1.3rem;
   }
 }
 .hero_single .opacity-mask p {
@@ -2289,8 +2290,8 @@ ul#top_menu > li a.btn_access.green:hover {
 }
 .hero_single.version_2 {
   text-align: left;
-  height: 650px;
-  background: #ededed url(../img/home_section_1.jpg) center center no-repeat;
+  height: 400px;
+  background: #ededed url(../img/home_section_1.png) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2298,7 +2299,7 @@ ul#top_menu > li a.btn_access.green:hover {
 }
 @media (max-width: 991px) {
   .hero_single.version_2 {
-    height: 560px;
+    height: 400px;
     text-align: center;
   }
 }

@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Prozim - Find a Professional and Book a Consultation by Appointment, Chat or Video call">
     <meta name="author" content="Ansonika">
-    <title>Prozim - Find a Professional and Book a Consultation by Appointment, Chat or Video call</title>
+    <title>TNPSC CAREER(Build Your Dream Job Here)</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="<?php echo base_url()?>/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo base_url()?>/assets/img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="<?php echo base_url()?>/assets/img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="<?php echo base_url()?>/assets/img/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="<?php echo base_url()?>/assets/img/apple-touch-icon-114x114-precomposed.png">
@@ -32,14 +32,14 @@
 				
 	<header class="header clearfix element_to_stick">
 		<div class="container-fluid">
-		<div id="logo">
+		<div id="logo" style="margin-left: 30px">
 			<a href="index.html">
-				<img src="img/logo.svg" width="120" height="35" alt="" class="logo_normal">
-				<img src="img/logo_sticky.svg" width="120" height="35" alt="" class="logo_sticky">
+				<img src="<?php echo base_url()?>/assets/img/logo-w.png" width="200px" height="40px" alt="" class="logo_normal">
+				<img src="<?php echo base_url()?>/assets/img/logo.png" width="200px" height="40px" alt="" class="logo_sticky">
 			</a>
 		</div>
 		<ul id="top_menu">
-			<li><a href="login.html" class="btn_access">Log In</a></li>
+			<li><a href="#sign-in-dialog" id="sign-in" class="btn_access">Log In</a></li>
 			<li><a href="submit-professional.html" class="btn_access green">Join Free</a></li>
 		</ul>
 		<!-- /top_menu -->
@@ -51,11 +51,11 @@
 				<a href="#0" class="open_close">
 					<i class="icon_close"></i><span>Menu</span>
 				</a>
-				<a href="index.html"><img src="img/logo.svg" width="120" height="35" alt=""></a>
+				<a href="<?php echo base_url()?>"><img src="<?php echo base_url()?>/assets/img/logo.png" width="250px" height="75" alt=""></a>
 			</div>
 			<ul>
 				<li class="submenu">
-					<a href="#0" class="show-submenu">Home</a>
+					<a href="#0" class="show-submenu">Exams</a>
 					<ul>
 						<li><a href="index.html">Default</a></li>
 						<li><a href="index-2.html">Video Background</a></li>
@@ -66,7 +66,7 @@
 					</ul>
 				</li>
 				<li class="submenu">
-					<a href="#0" class="show-submenu">Listing</a>
+					<a href="#0" class="show-submenu">Notifications</a>
 					<ul>
 						<li><a href="grid-listing-1.html">Grid Listing Default</a></li>
 						<li><a href="grid-listing-2.html">Grid Listing Isotope Sort</a></li>
@@ -89,7 +89,7 @@
 					</ul>
 				</li>
 				<li class="submenu">
-					<a href="#0" class="show-submenu">Other Pages</a>
+					<a href="#0" class="show-submenu">Current Affairs</a>
 					<ul>
 						<li><a href="admin_section/index.html">Admin Dashboard</a></li>
 						<li><a href="404.html">404 Error</a></li>

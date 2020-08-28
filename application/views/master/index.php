@@ -5,30 +5,10 @@
 	            <div class="container">
 	                <div class="row">
 	                    <div class="col-xl-9 col-lg-10">
-	                        <h1>Find a Professional</h1>
-	                        <p>Book a Consultation by Appointment, Chat or Video call</p>
-	                        <form method="post" action="grid-listing-1.html">
-	                            <div class="row no-gutters custom-search-input">
-	                                <div class="col-md-9">
-	                                    <div class="form-group">
-	                                        <input class="form-control" type="text" placeholder="Find a professional...">
-	                                    </div>
-	                                </div>
-	                                <div class="col-md-3">
-	                                    <input type="submit" value="Find">
-	                                </div>
-	                            </div>
-	                            <!-- /row -->
-	                            <div class="search_trends">
-	                                <h5>Trending:</h5>
-	                                <ul>
-	                                    <li><a href="#0">doctor</a></li>
-	                                    <li><a href="#0">lawyer</a></li>
-	                                    <li><a href="#0">teacher</a></li>
-	                                    <li><a href="#0">psychologist</a></li>
-	                                </ul>
-	                            </div>
-	                        </form>
+	                        <h2 style="color:#fff;padding-top: 20px;">BUILD YOUR DREAM JOB HERE</h2>
+	                        <br/>
+	                        <a href="grid-listing-1.html" class="btn_1 medium">START NOW</a>
+	                        
 	                    </div>
 	                </div>
 	                <!-- /row -->
