@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,12 +20,13 @@
     <!-- BASE CSS -->
     <link href="<?php echo base_url()?>/assets/css/bootstrap_customized.min.css" rel="stylesheet">
     <link href="<?php echo base_url()?>/assets/css/style.css" rel="stylesheet">
-
+<link href="<?php echo base_url()?>/assets/css/submit.css" rel="stylesheet">
     <!-- SPECIFIC CSS -->
     <link href="<?php echo base_url()?>/assets/css/home.css" rel="stylesheet">
-
+ <link href="<?php echo base_url()?>/assets/css/listing.css" rel="stylesheet">
     <!-- YOUR CUSTOM CSS -->
     <link href="<?php echo base_url()?>/assets/css/custom.css" rel="stylesheet">
+     <link href="<?php echo base_url()?>/assets/css/help.css" rel="stylesheet">
 
 </head>
 
@@ -33,14 +35,14 @@
 	<header class="header clearfix element_to_stick">
 		<div class="container-fluid">
 		<div id="logo" style="margin-left: 30px">
-			<a href="index.html">
+			<a href="<?php echo base_url()?>">
 				<img src="<?php echo base_url()?>/assets/img/logo-w.png" width="200px" height="40px" alt="" class="logo_normal">
 				<img src="<?php echo base_url()?>/assets/img/logo.png" width="200px" height="40px" alt="" class="logo_sticky">
 			</a>
 		</div>
 		<ul id="top_menu">
 			<li><a href="#sign-in-dialog" id="sign-in" class="btn_access">Log In</a></li>
-			<li><a href="submit-professional.html" class="btn_access green">Join Free</a></li>
+			<li><a href="#sign-in-dialog1" id="sign-in" class="btn_access green">Join Free</a></li>
 		</ul>
 		<!-- /top_menu -->
 		<a href="#0" class="open_close">
@@ -57,57 +59,25 @@
 				<li class="submenu">
 					<a href="#0" class="show-submenu">Exams</a>
 					<ul>
-						<li><a href="index.html">Default</a></li>
-						<li><a href="index-2.html">Video Background</a></li>
-						<li><a href="index-3.html">Slider</a></li>
-						<li><a href="index-4.html">GDPR Cookie Bar EU Law</a></li>
-						<li><a href="index-5.html">Full Screen</a></li>
-						<li><a href="user-logged-1.html">User Logged</a></li>
+						<?php foreach($exams as $row){?>
+						<li><a href="<?php echo base_url()?>exam/<?php echo $row->id;?>"><?php echo $row->exams_name;?></a></li>
+					<?php } ?>
+						
 					</ul>
 				</li>
 				<li class="submenu">
-					<a href="#0" class="show-submenu">Notifications</a>
-					<ul>
-						<li><a href="grid-listing-1.html">Grid Listing Default</a></li>
-						<li><a href="grid-listing-2.html">Grid Listing Isotope Sort</a></li>
-						<li><a href="grid-listing-3.html">Grid Listing Filters Left</a></li>
-						<li><a href="listing-map.html">Listing Side Map</a></li>
-						<li><a href="detail-page.html">Detail page 1</a></li>
-						<li><a href="detail-page-2.html">Detail page 2</a></li>
-						<li><a href="detail-page-3.html">Detail page 3</a></li>
-						<li class="third-level"><a href="#0">OpenStreetMap</a>
-							<ul>
-								<li><a href="grid-listing-1-openstreetmap.html">Grid Listing</a></li>
-								<li><a href="listing-map-openstreetmap.html">Listing Side Map</a></li>
-							</ul>
-						</li>
-						<li><a href="booking.html">Booking</a></li>
-						<li><a href="submit-professional.html">Submit Professional</a></li>
-						<li><a href="wishlist.html">Wishlist</a></li>
-						<li><a href="leave-review.html">Leave a Review</a></li>
-						<li><a href="user-logged-2.html">User Logged 2</a></li>					
-					</ul>
+					<a href="<?php echo base_url()?>syllabus" class="show-submenu">Syllabus</a>
+					
 				</li>
 				<li class="submenu">
-					<a href="#0" class="show-submenu">Current Affairs</a>
-					<ul>
-						<li><a href="admin_section/index.html">Admin Dashboard</a></li>
-						<li><a href="404.html">404 Error</a></li>
-						<li><a href="help.html">Help and Faq</a></li>
-						<li><a href="modal-login.html">Modal Login</a></li>
-						<li><a href="modal-popup.html">Modal Advertise</a></li>
-						<li><a href="modal-newsletter.html">Modal Newsletter</a></li>
-						<li><a href="pricing-tables-1.html">Pricing Tables 1</a></li>
-						<li><a href="pricing-tables-2.html">Pricing Tables 2</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contacts.html">Contacts</a></li>
-						<li><a href="coming_soon/index.html" target="_blank">Coming Soon</a></li>
-						<li><a href="login.html">Login</a></li>
-						<li><a href="register.html">Register</a></li>
-						<li><a href="icon-pack-1.html">Icon Pack 1</a></li>
-					</ul>
+					<a href="<?php echo base_url()?>notifications" class="show-submenu">Notifications</a>
+					
 				</li>
-				<li><a href="#0">Buy this template</a></li>
+				<li class="submenu">
+					<a href="<?php echo base_url()?>currentaffairs" class="show-submenu">Current Affairs</a>
+					
+				</li>
+				
 			</ul>
 		</nav>
 	</div>

@@ -15,82 +15,42 @@
 	            </div>
 	        </div>
 	    </div>
-	    <!-- /hero_single -->
-	    <div class="bg_gray">
-	        <div class="container margin_60_40">
-	            <div class="main_title center">
-	                <span><em></em></span>
-	                <h2>Popular Categories</h2>
-	                <p>Cum doctus civibus efficiantur in imperdiet deterruisset</p>
-	            </div>
-	            <!-- /main_title -->
-	            <div class="owl-carousel owl-theme categories_carousel">
-					<div class="item">
-						<a href="grid-listing-1.html">
-							<span>98</span>
-							<img src="<?php echo base_url()?>/assets/data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>/assets/img/icon_home_1.svg" alt="" class="owl-lazy">
-							<h3>Gynecologist</h3>
-							<small>Avg price $40 Hr.</small>
-						</a>
-					</div>
-					<div class="item">
-						<a href="grid-listing-1.html">
-							<span>96</span>
-							<img src="<?php echo base_url()?>/assets/data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>/assets/img/icon_home_3.svg" alt="" class="owl-lazy">
-							<h3>Lawyer</h3>
-							<small>Avg price $55 Hr.</small>
-						</a>
-					</div>
-					<div class="item">
-						<a href="grid-listing-1.html">
-							<span>87</span>
-							<img src="<?php echo base_url()?>/assets/data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>/assets/img/icon_home_2.svg" alt="" class="owl-lazy">
-							<h3>Dermatologist</h3>
-							<small>Avg price $50 Hr.</small>
-						</a>
-					</div>
-					<div class="item">
-						<a href="grid-listing-1.html">
-							<span>78</span>
-							<img src="<?php echo base_url()?>/assets/data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>/assets/img/icon_home_4.svg" alt="" class="owl-lazy">
-							<h3>Teacher</h3>
-							<small>Avg price $40 Hr.</small>
-						</a>
-					</div>
-					<div class="item">
-						<a href="grid-listing-1.html">
-							<span>65</span>
-							<img src="<?php echo base_url()?>/assets/data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>/assets/img/icon_home_5.svg" alt="" class="owl-lazy">
-							<h3>Economist</h3>
-							<small>Avg price $60 Hr.</small>
-						</a>
-					</div>
-					<div class="item">
-						<a href="grid-listing-1.html">
-							<span>65</span>
-							<img src="<?php echo base_url()?>/assets/data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>/assets/img/icon_home_6.svg" alt="" class="owl-lazy">
-							<h3>Psychologist</h3>
-							<small>Avg price $40 Hr.</small>
-						</a>
-					</div>
-					<div class="item">
-						<a href="grid-listing-1.html">
-							<span>65</span>
-							<img src="<?php echo base_url()?>/assets/data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>/assets/img/icon_home_7.svg" alt="" class="owl-lazy">
-							<h3>Pediatrician</h3>
-							<small>Avg price $35 Hr.</small>
-						</a>
-					</div>
+	    
+	   <div class="bg_gray">
+			<div class="container margin_60_40">
+				<div class="main_title center">
+					<span><em></em></span>
+					<h2 title="Tnpsc Career Popular Exams">Popular Exams</h2>
+					
 				</div>
-				<!-- /carousel -->
-	        </div>
-	        <!-- /container -->
-	    </div>
-	    <!-- /bg_gray -->
+				<!-- /main_title -->
+				<div class="owl-carousel owl-theme categories_carousel">
+					<?php foreach($exams as $row){?>
+	                <div class="item_version_2" title="Tnpsc Career" style="border:1px solid #ccc;padding:10px;">
+	                    <a title=" <?php echo $row->exams_name?>" href="<?php echo base_url()?>exam/<?php echo $row->id?>">
+	                        <figure>
+	                           
+	                            <img src="<?php echo $row->image?>" data-src="<?php echo $row->image?>" alt="" class="owl-lazy" title="<?php echo $row->exams_name?>">
+	                           <!--  <div class="info">
+	                                <h3><?php echo $row->exams_name?></h3>
+	                               
+	                            </div> -->
+	                        </figure>
+	                    </a>
+	                </div>
+	                <?php } ?>
+	            
+	                
+	            </div>
+	            <!-- /carousel -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /bg_gray -->
 	    <div class="container margin_60_40">
 	        <div class="main_title center">
 	            <span><em></em></span>
-	            <h2>Popular Professionals</h2>
+	            <h2>Popular Exams</h2>
 	            <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
 	        </div>
 	        <div class="row add_bottom_15">
@@ -116,117 +76,8 @@
 	                    </ul>
 	                </div>
 	            </div>
-	            <!-- /strip grid -->
-	            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-	                <div class="strip">
-	                    <figure>
-	                        <a href="#0" class="wish_bt"><i class="icon_heart"></i></a>
-	                        <img src="<?php echo base_url()?>/assets/img/lazy-placeholder.png" data-src="<?php echo base_url()?>/assets/img/professionals_photos/home_2.jpg" class="img-fluid lazy" alt="">
-	                        <a href="detail-page.html" class="strip_info">
-	                            <div class="item_title">
-	                                <h3>Lucy Shoemaker</h3>
-	                                <small>Lawyer</small>
-	                            </div>
-	                        </a>
-	                    </figure>
-	                    <ul>
-	                        <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="bottom" title="Available Appointment"><i class="icon-users"></i></a></li>
-	                        <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="bottom" title="Available Chat"><i class="icon-chat"></i></a></li>
-	                        <li>
-	                            <div class="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <!-- /strip grid -->
-	            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-	                <div class="strip">
-	                    <figure>
-	                        <a href="#0" class="wish_bt"><i class="icon_heart"></i></a>
-	                        <img src="<?php echo base_url()?>/assets/img/lazy-placeholder.png" data-src="<?php echo base_url()?>/assets/img/professionals_photos/home_3.jpg" class="img-fluid lazy" alt="">
-	                        <a href="detail-page.html" class="strip_info">
-	                            <div class="item_title">
-	                                <h3>Prof. Luke Lachinet</h3>
-	                                <small>Math Teacher</small>
-	                            </div>
-	                        </a>
-	                    </figure>
-	                    <ul>
-	                        <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="bottom" title="Available Appointment"><i class="icon-users"></i></a></li>
-	                        <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="bottom" title="Available Video Call"><i class="icon-videocam"></i></a></li>
-	                        <li>
-	                            <div class="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <!-- /strip grid -->
-	            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-	                <div class="strip">
-	                    <figure>
-	                        <a href="#0" class="wish_bt"><i class="icon_heart"></i></a>
-	                        <img src="<?php echo base_url()?>/assets/img/lazy-placeholder.png" data-src="<?php echo base_url()?>/assets/img/professionals_photos/home_4.jpg" class="img-fluid lazy" alt="">
-	                        <a href="detail-page.html" class="strip_info">
-	                            <div class="item_title">
-	                                <h3>Dr. Marta Rainwater</h3>
-	                                <small>Psychologist</small>
-	                            </div>
-	                        </a>
-	                    </figure>
-	                    <ul>
-	                        <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="bottom" title="Available Chat"><i class="icon-chat"></i></a></li>
-	                        <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="bottom" title="Available Video Call"><i class="icon-videocam"></i></a></li>
-	                        <li>
-	                            <div class="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <!-- /strip grid -->
-	            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-	                <div class="strip">
-	                    <figure>
-	                        <a href="#0" class="wish_bt"><i class="icon_heart"></i></a>
-	                        <img src="<?php echo base_url()?>/assets/img/lazy-placeholder.png" data-src="<?php echo base_url()?>/assets/img/professionals_photos/home_5.jpg" class="img-fluid lazy" alt="">
-	                        <a href="detail-page.html" class="strip_info">
-	                            <div class="item_title">
-	                                <h3>Tom Manzone</h3>
-	                                <small>Lawyer</small>
-	                            </div>
-	                        </a>
-	                    </figure>
-	                    <ul>
-	                        <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="bottom" title="Available Chat"><i class="icon-chat"></i></a></li>
-	                        <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="bottom" title="Available Video Call"><i class="icon-videocam"></i></a></li>
-	                        <li>
-	                            <div class="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <!-- /strip grid -->
-	            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-	                <div class="strip">
-	                    <figure>
-	                        <a href="#0" class="wish_bt"><i class="icon_heart"></i></a>
-	                        <img src="<?php echo base_url()?>/assets/img/lazy-placeholder.png" data-src="<?php echo base_url()?>/assets/img/professionals_photos/home_6.jpg" class="img-fluid lazy" alt="">
-	                        <a href="detail-page.html" class="strip_info">
-	                            <div class="item_title">
-	                                <h3>Carl Cornfield</h3>
-	                                <small>Accountant</small>
-	                            </div>
-	                        </a>
-	                    </figure>
-	                    <ul>
-	                        <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="bottom" title="Available Appointment"><i class="icon-users"></i></a></li>
-	                        <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="bottom" title="Available Chat"><i class="icon-chat"></i></a></li>
-	                        <li>
-	                            <div class="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <!-- /strip grid -->
+	            
+	            
 	        </div>
 	        <!-- /row -->
 	        <p class="text-center add_bottom_30"><a href="grid-listing-1.html" class="btn_1 medium">Start Searching</a></p>
