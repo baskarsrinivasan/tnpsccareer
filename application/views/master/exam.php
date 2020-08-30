@@ -22,7 +22,7 @@
             <div class="row">
                 
 <?php include("left_menu.php");?>
-                <div class="col-lg-8" style="background:#fff;margin-left: 20px;padding:40px 30px;border:1px solid #ccc">
+                <div class="col-lg-8" style="background:#fff;padding:40px 30px;border:1px solid #ccc">
                     <p class="center"><?php if($row->document!='') { ?>
                             <a class="download upper" href="<?php echo $row->document;?>" download>
  <i class="icon_folder_download"></i> Download Syllabus
@@ -31,9 +31,7 @@
                     <p style="text-align:center"><img  src="<?php echo $row->image;?>" width="300px" class="center" ></p>
                     <?php echo $row->exam_syllabus_des;?>
                 </div>
-                <aside class="col-lg-1" id="sidebar_fixed">
-                   
-                </aside>
+                
                 <!-- /col -->
             </div>      
         </div>
