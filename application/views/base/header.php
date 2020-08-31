@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Prozim - Find a Professional and Book a Consultation by Appointment, Chat or Video call">
+    <meta name="description" content="TNPSC CAREER(Build Your Dream Job Here)">
     <meta name="author" content="Ansonika">
     <title>TNPSC CAREER(Build Your Dream Job Here)</title>
 
