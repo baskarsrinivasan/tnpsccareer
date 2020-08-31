@@ -47,6 +47,7 @@
 <?php } ?></p>
                     <p style="text-align:center"><img  src="<?php echo $row->image;?>" width="300px" class="center" ></p>
                     <?php echo $row->exam_syllabus_des;?>
+                    <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
                         </div>
                         <!-- /strip grid -->
                        
