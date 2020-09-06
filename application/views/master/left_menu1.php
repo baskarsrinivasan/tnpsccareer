@@ -9,7 +9,7 @@
                                     <li style="">
                                         <label class="container_check">
 
-                                            <a href="<?php echo base_url()?>exam/<?php echo $row->id;?>" style="color:#000"><?php echo $row->exams_name;?></a>
+                                            <a title="<?php echo $row->exams_name;?>" href="<?php echo base_url()?>exam/<?php echo $row->id;?>" style="color:#000"><?php echo $row->exams_name;?></a>
                                          
                                         </label>
                                     </li>
