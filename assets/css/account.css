@@ -1,5 +1,5 @@
 #login_bg, #register_bg {
-  background: #ccc url(../img/access_bg.jpg) center center no-repeat fixed;
+  background: url(images/bg1.jpg) center left no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,9 +13,9 @@
   -moz-box-shadow: 3px 0 30px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 0 30px rgba(0, 0, 0, 0.2);
   width: 430px;
-  padding: 30px 45px;
+  padding: 10px 45px;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   overflow-y: auto;
   background-color: #fff;
@@ -23,8 +23,8 @@
 }
 #login figure, #register figure {
   text-align: center;
-  border-bottom: 1px solid #ededed;
-  padding: 0 60px 30px 60px;
+ 
+  padding: 0;
 }
 @media (max-width: 767px) {
   #login figure, #register figure {

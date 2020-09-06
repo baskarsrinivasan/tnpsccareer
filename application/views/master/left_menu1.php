@@ -6,7 +6,7 @@
                             <div class="collapse show" id="filter_1">
                                 <ul>
                                     <?php foreach($exams as $row){?>
-                                    <li style="border-bottom:1px solid #ccc">
+                                    <li style="">
                                         <label class="container_check">
 
                                             <a href="<?php echo base_url()?>exam/<?php echo $row->id;?>" style="color:#000"><?php echo $row->exams_name;?></a>

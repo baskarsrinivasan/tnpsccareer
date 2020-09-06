@@ -19,6 +19,9 @@ class Home extends CI_Controller
     public function index()
     {
         $view_data['exams'] = $this->mcommon->records_all('exams',array('is_active'=>1),  $order_by='');
+         $view_data['exam_notifications'] = $this->home_model->getnotification();
+        $view_data['exam_currentaffairs'] = $this->home_model->getcurrentaffairs();
+        $view_data['exam_syllabus'] = $this->home_model->getsyllabus();
 
         /*$language_id = ($this->session->userdata('site_lang') == 'english') ? '301' : '302';
         $data = array(

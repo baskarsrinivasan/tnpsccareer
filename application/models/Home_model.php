@@ -65,5 +65,38 @@ public function exam_syllabus($id)
         return $result;
 
 	}
+		public function getcurrentaffairs()
+	{
+		     $this->db->select('*');
+            $this->db->from('exam_currentaffairs as es');
+           $this->db->limit('10');
+            $query = $this->db->get();
+        $result = $query->result();
+        //print_r($result);exit();
+        return $result;
+
+	}
+	public function getnotification()
+	{
+		     $this->db->select('*');
+            $this->db->from('exam_notification as es');
+           $this->db->limit('10');
+            $query = $this->db->get();
+        $result = $query->result();
+        //print_r($result);exit();
+        return $result;
+
+	}
+	public function getsyllabus()
+	{
+		     $this->db->select('*');
+            $this->db->from('exam_syllabus as es');
+           $this->db->limit('10');
+            $query = $this->db->get();
+        $result = $query->result();
+        //print_r($result);exit();
+        return $result;
+
+	}
 		
 }

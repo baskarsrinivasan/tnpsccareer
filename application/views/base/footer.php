@@ -33,7 +33,7 @@
 		<div class="modal_header">
 			<h3>Sign In</h3>
 		</div>
-		<form>
+		<form autocomplete="off" action="<?php echo base_url(); ?>login/login_process" method="post" enctype="multipart/form-data">
 			<div class="sign-in-wrapper">
 				<a href="#0" class="social_bt facebook">Login with Facebook</a>
 				<a href="#0" class="social_bt google">Login with Google</a>

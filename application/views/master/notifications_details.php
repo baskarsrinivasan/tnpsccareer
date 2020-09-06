@@ -8,7 +8,7 @@
                         <div class="col-xl-9 col-lg-10">
                             <h2 style="color:#fff;padding-top: 20px;">BUILD YOUR DREAM JOB HERE</h2>
                             <br/>
-                            <a href="grid-listing-1.html" class="btn_1 medium">START NOW</a>
+                            <a href="<?php echo base_url()?>register" class="btn_1 medium">START NOW</a>
                             
                         </div>
                     </div>
