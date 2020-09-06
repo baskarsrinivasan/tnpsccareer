@@ -46,7 +46,7 @@
 
 			<li><a href="<?php echo base_url()?>login"  class="btn_access">Log In</a></li>
 			
-			<li><a href="<?php echo base_url()?>register" id="sign-in" class="btn_access green">Join Free</a></li>
+			<li><a href="<?php echo base_url()?>register"  class="btn_access green">Join Free</a></li>
 		
 		</ul>
 		<?php } else {?>

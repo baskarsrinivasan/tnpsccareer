@@ -10,14 +10,14 @@
                                     <li>
                                         <label class="container_check">
 
-                                            <a href="<?php echo base_url()?>exam/<?php echo $row->exam_id;?>" style="color:#000">Syllabus</a>
+                                            <a title="<?php echo $row->exams_name;?> Syllabus" href="<?php echo base_url()?>exam/<?php echo $row->exam_id;?>" style="color:#000">Syllabus</a>
                                          
                                         </label>
                                     </li>
                                     <li style="padding: 8px 0 0 0;">
                                         <label class="container_check">
 
-                                            <a href="<?php echo base_url()?>notification/<?php echo $row->exam_id;?>" style="color:#000;">Notifications</a>
+                                            <a title="<?php echo $row->exams_name;?> Notifications" href="<?php echo base_url()?>notification/<?php echo $row->exam_id;?>" style="color:#000;">Notifications</a>
                                             
                                             
                                         </label>
@@ -25,7 +25,7 @@
                                     <li style="padding: 8px 0 0 0;">
                                         <label class="container_check">
 
-                                            <a href="<?php echo base_url()?>notification/<?php echo $row->exam_id;?>" style="color:#000;">Current Affairs</a>
+                                            <a title="<?php echo $row->exams_name;?> Current Affairs" href="<?php echo base_url()?>notification/<?php echo $row->exam_id;?>" style="color:#000;">Current Affairs</a>
                                             
                                             
                                         </label>
@@ -33,7 +33,7 @@
                                       <li style="padding: 8px 0 0 0;">
                                         <label class="container_check">
 
-                                            <a href="" style="color:#000">Study Materials</a>
+                                            <a title="<?php echo $row->exams_name;?> Study Materials" href="#" style="color:#000">Study Materials</a>
                                             
                                             
                                         </label>
@@ -41,7 +41,7 @@
                                      <li style="padding: 8px 0 0 0;">
                                         <label class="container_check">
 
-                                            <a href="" style="color:#000">Lessons</a>
+                                            <a title="<?php echo $row->exams_name;?> Lessons" href="" style="color:#000">Lessons</a>
                                             
                                             
                                         </label>
