@@ -8,7 +8,7 @@
                         <div class="col-xl-9 col-lg-10">
                             <h2 style="color:#fff;padding-top: 20px;">BUILD YOUR DREAM JOB HERE</h2>
                             <br/>
-                            <a href="grid-listing-1.html" class="btn_1 medium">START NOW</a>
+                            <a href="<?php echo base_url()?>register" class="btn_1 medium">START NOW</a>
                             
                         </div>
                     </div>
@@ -22,28 +22,55 @@
             <div class="row">
                 <?php include("left_menu1.php");?>
 
-                <div class="col-lg-8" style="background:#fff;margin-left: 20px;padding:40px 30px;border:1px solid #ccc">
-                    <div class="container">
-                <div class="main_title version_2">
-                   
-                    <h2>Current Affairs</h2>
+                <div class="col-lg-8" style="background: #fff">
+                   <div class="">
+            
+            <div class="row" style="border:1px solid #2196f3">
+                <div class="col-12" style="background: #2196f3">
+                    <div class="" style="padding-top: 10px">
+                    
+                    <h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;">Current Affairs</h4>
                     
                 </div>
-                <div class="list_articles add_bottom_25 clearfix">
-                    <ul>
-                        <?php foreach($exam_currentaffairs as $row){?>
-                        <li><a href="<?php echo base_url()?>currentaffairs_details/<?php echo $row->id;?>"><i class="icon_compass_alt"></i><?php echo $row->exam_currentaffairs_name;?></a></li>
-                    <?php } ?>
-                      
-                    </ul>
                 </div>
-                <!-- /list_articles -->
+                <div class="col-md-12">
+                    
+                       
+                               <div class="container">
+            
+  <table class="table">
+    <!-- <thead>
+    <tr style="color:#000;font-size: 20px">
+        <th>DETAILS</th>
+        <th>POSTED DATE</th>
+      
+      </tr>
+      </thead> -->
+    <tbody>
+        <?php foreach($exam_currentaffairs as $currentaffairs){?>
+      <tr>
+        <td ><a style="color:blue;font-size: 18px" href="<?php echo base_url()?>currentaffairs_details/<?php echo $currentaffairs->id;?>"><?php echo $currentaffairs->exam_currentaffairs_name;?></a><span style="margin-left: 20px">(Posted Date:<?php echo date("d-m-Y", strtotime($currentaffairs->createddate));?>)</span></td>
+        <td></td>
+       
+      </tr>
+  <?php } ?>
+      
+    </tbody>
+    <tfoot>
+        
+        <tr style="text-align:right;">
+        <td ></td>
+      </tr>
+    </tfoot>
+  </table>
+ 
+</div>
+                   
+                </div>
+                
             </div>
                 </div>
-                <aside class="col-lg-1" id="sidebar_fixed">
-                   
-                </aside>
-                <!-- /col -->
+               
             </div>      
         </div>
         <!-- /container -->

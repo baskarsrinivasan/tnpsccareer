@@ -7,14 +7,14 @@
                             <h4 style="text-transform: uppercase;padding:10px;margin-top: 30px"><a href="#filter_1" data-toggle="collapse" class="opened"><?php echo $row->exams_name;?></a></h4>
                             <div class="collapse show" id="filter_1">
                                 <ul>
-                                    <li style="border-bottom:1px solid #ccc">
+                                    <li>
                                         <label class="container_check">
 
                                             <a href="<?php echo base_url()?>exam/<?php echo $row->exam_id;?>" style="color:#000">Syllabus</a>
                                          
                                         </label>
                                     </li>
-                                    <li style="border-bottom:1px solid #ccc;padding: 8px 0 0 0;">
+                                    <li style="padding: 8px 0 0 0;">
                                         <label class="container_check">
 
                                             <a href="<?php echo base_url()?>notification/<?php echo $row->exam_id;?>" style="color:#000;">Notifications</a>
@@ -22,7 +22,7 @@
                                             
                                         </label>
                                     </li>
-                                    <li style="border-bottom:1px solid #ccc;padding: 8px 0 0 0;">
+                                    <li style="padding: 8px 0 0 0;">
                                         <label class="container_check">
 
                                             <a href="<?php echo base_url()?>notification/<?php echo $row->exam_id;?>" style="color:#000;">Current Affairs</a>
@@ -30,7 +30,7 @@
                                             
                                         </label>
                                     </li>
-                                      <li style="border-bottom:1px solid #ccc;padding: 8px 0 0 0;">
+                                      <li style="padding: 8px 0 0 0;">
                                         <label class="container_check">
 
                                             <a href="" style="color:#000">Study Materials</a>

@@ -292,7 +292,7 @@ a.btn_search_mobile {
 }
 
 .filter_col {
-  border: 1px solid #ededed;
+  border: 2px solid #3cb46e;
   padding: 15px;
   background-color: #fff;
   margin-bottom: 25px;
@@ -376,9 +376,9 @@ a.btn_search_mobile {
 }
 .filter_type h4 a {
   display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  color: #444;
+  font-size: 18px;
+  font-size: 1rem;
+  color: #000;
   padding: 8px 10px;
   margin: -5px -5px 0 -5px;
   line-height: 1;
@@ -398,7 +398,7 @@ a.btn_search_mobile {
   top: 2px;
 }
 .filter_type h4 a.opened {
-  background-color: #f8f8f8;
+  background-color: #fff;
 }
 .filter_type h4 a.opened:after {
   content: "\33";

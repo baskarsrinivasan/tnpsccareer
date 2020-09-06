@@ -32,3 +32,31 @@ a.download:hover
 {
 	text-transform: uppercase;
 }
+a.button_link
+{
+	background: #2196f3;
+	color:#fff;
+	font-size: 18px;
+	text-align: center;
+	border:1px solid #000;
+	padding: 10px;
+}
+a.button_link1
+{
+	background: #f00053;
+	color:#fff;
+	font-size: 18px;
+	text-align: center;
+	border:1px solid #000;
+	padding: 10px;
+}
+a.button_link2
+{
+	background: #000c34;
+	color:#fff;
+	font-size: 18px;
+	text-align: center;
+	border:1px solid #000;
+	padding: 10px;
+}
+
