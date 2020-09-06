@@ -29,7 +29,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost')
 }
 else
 {
-	$root  = "http://".$_SERVER['HTTP_HOST'];
+	$root  = "https://".$_SERVER['HTTP_HOST'];
 
 }
 
