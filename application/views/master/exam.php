@@ -5,10 +5,9 @@
             <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-9 col-lg-10">
-                            <h2 style="color:#fff;padding-top: 20px;">BUILD YOUR DREAM JOB HERE</h2>
-                            <br/>
-                            <a href="<?php echo base_url()?>register" class="btn_1 medium">START NOW</a>
+                        <div class="col-xl-12 col-lg-10">
+                            <h2 class="upper" style="color:#fff;padding-top:0px;text-align: center;"><?php echo $row->exams_name;?></h2>
+                           
                             
                         </div>
                     </div>

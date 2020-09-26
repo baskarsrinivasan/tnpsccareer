@@ -8,7 +8,7 @@
 	                    
 	                      
 	                   
-	                     <div class="col-xl-12 col-lg-12" style="padding-top: 80px;text-align: center;">
+	                     <div class="col-xl-12 col-lg-12" style="padding-top: 20px;text-align: center;">
 	                    	
 	                    	<h2 style="color:#fff;" title="BUILD YOUR DREAM JOB HERE">BUILD YOUR DREAM JOB HERE</h2>
 	                        
@@ -34,7 +34,7 @@
 	                    <!-- <img src="<?php echo $row->image?>" data-src="<?php echo $row->image?>" class="img-fluid lazy" alt=""> -->
 	                    <a title="Tnpsc Career <?php echo $row->exams_name?>" href="<?php echo base_url()?>exam/<?php echo $row->id?>" class="strip_info">
 	                        <div class="item_title">
-	                            <h3><?php echo $row->exams_name?></h3>
+	                            <h3 class="upper"><?php echo $row->exams_name?></h3>
 	                            
 	                        </div>
 	                    </a>
@@ -50,12 +50,14 @@
 		
 		</div>
 	   
-	    <div class="container">
+	    <div style="background: #fff;">
+	    <div class="container" >
 	    	<div class="main_title center">
 				<span><em></em></span>
 				<h2>EXAM PREP</h2>
 				
 			</div>
+			 <div class="container">
 	    <div class="row">
 	        
 	        <div class="col-md-6">
@@ -91,8 +93,8 @@
       </tr>
   <?php } ?>
        <tr>
-      	<td></td>
-      	<td style="padding-top: 30px"><a class="button_link" href="<?php echo base_url()?>currentaffairs">View More...</a></td>
+      	
+      	
       </tr>
     </tbody>
     <tfoot>
@@ -100,7 +102,7 @@
     	
     </tfoot>
   </table>
-  
+  <p style="padding-top:10px;text-align: center;"><a class="button_link" href="<?php echo base_url()?>currentaffairs">View More...</a></p>
 </div>
 	               
 	            </div>
@@ -108,7 +110,7 @@
 	        </div>
 	        </div>
 	        <div class="col-md-6">
-	        <div class="row" style="border:1px solid #44207f;margin-left:10px">
+	        <div class="row" style="border:1px solid #44207f;margin-left:5px">
 	            <div class="col-12" style="background:#44207f">
 	                <div class="" style="padding-top: 10px">
 					
@@ -126,7 +128,7 @@
     <tbody>
     	<?php foreach($exam_notifications as $notifications){?>
       <tr>
-        <td ><a style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>notification_details/<?php echo $notifications->id;?>"><?php echo substr($notifications->exam_notification_name,0,30);?>..</a><span style="margin-left: 20px"></span></td>
+        <td ><a title="<?php echo $notifications->exam_notification_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>notification_details/<?php echo $notifications->id;?>"><?php echo substr($notifications->exam_notification_name,0,30);?>..</a><span style="margin-left: 20px"></span></td>
         <td>(Posted Date:<?php echo date("d-m-Y", strtotime($notifications->createddate));?>)</td>
         
        
@@ -135,12 +137,13 @@
       
   <?php } ?>
       <tr>
-      	<td></td>
-      	<td style="padding-top: 30px"><a class="button_link1" href="<?php echo base_url()?>notifications">View More...</a></td>
+      	
+      	
       </tr>
     </tbody>
   </table>
-  <div style="text-align: center;"></div>
+  <p style="padding-top: 30px;text-align: center;"><a class="button_link1" href="<?php echo base_url()?>notifications">View More...</a></p>
+ 
 </div>
 	               
 	            </div>
@@ -150,7 +153,9 @@
 	        
 	    </div>
 	    </div>
-	    <div class="bg_gray">
+	    </div>
+	    </div>
+	    <div class="">
 		<div class="container margin_60_40 how">
 			<div class="main_title center">
 				<span><em></em></span>
