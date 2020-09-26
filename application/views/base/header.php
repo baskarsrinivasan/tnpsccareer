@@ -37,7 +37,7 @@
 		<div class="container-fluid">
 		<div id="logo" style="margin-left: 30px">
 			<a href="<?php echo base_url()?>">
-				<img src="<?php echo base_url()?>/assets/img/logo-w.png" width="200px" height="40px" alt="" class="logo_normal">
+				<img title="TNPSC CAREER (BUILD YOUR LIFE)" src="<?php echo base_url()?>/assets/img/logo-w.png" width="200px" height="40px" alt="" class="logo_normal">
 				<img src="<?php echo base_url()?>/assets/img/logo.png" width="200px" height="40px" alt="" class="logo_sticky">
 			</a>
 		</div>
@@ -87,7 +87,7 @@
 					<a href="#0" class="show-submenu">Exams</a>
 					<ul>
 						<?php foreach($exams as $row){?>
-						<li><a href="<?php echo base_url()?>exam/<?php echo $row->id;?>"><?php echo $row->exams_name;?></a></li>
+						<li><a title="<?php echo $row->exams_name;?>" href="<?php echo base_url()?>exam/<?php echo $row->id;?>"><?php echo $row->exams_name;?></a></li>
 					<?php } ?>
 						
 					</ul>

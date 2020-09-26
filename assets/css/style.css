@@ -2291,7 +2291,7 @@ ul#top_menu > li a.btn_access.green:hover {
 .hero_single.version_2 {
   text-align: left;
   height: 400px;
-  background: #ededed url(../img/home_section_1.png) center center no-repeat;
+  background: #8a41ff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2869,7 +2869,7 @@ ul#top_menu > li a.btn_access.green:hover {
   margin-bottom: 5px;
   overflow: hidden;
   position: relative;
-  height: 220px;
+  height: 150px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -2966,13 +2966,10 @@ ul#top_menu > li a.btn_access.green:hover {
 .strip figure .item_title {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  text-align: center;
   left: 0;
   padding: 65px 15px 10px 15px;
-  background: -moz-linear-gradient(top, transparent 5%, black 100%);
-  background: -webkit-linear-gradient(top, transparent 5%, black 100%);
-  background: linear-gradient(to bottom, transparent 5%, black 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+  
 }
 .strip figure .item_title h3 {
   font-size: 18px;
@@ -3153,7 +3150,7 @@ ul#top_menu > li a.btn_access.green:hover {
 a.btn_1,
 .btn_1 {
   border: none;
-  background: #FF3A65;
+  background: #3cb46e;
   outline: none;
   cursor: pointer;
   display: inline-block;
@@ -3181,7 +3178,7 @@ a.btn_1:focus,
 }
 a.btn_1:hover,
 .btn_1:hover {
-  background: #1f2f6a;
+  background: #3cb46e;
 }
 a.btn_1.full-width,
 .btn_1.full-width {
