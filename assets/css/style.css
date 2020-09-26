@@ -2290,7 +2290,7 @@ ul#top_menu > li a.btn_access.green:hover {
 }
 .hero_single.version_2 {
   text-align: left;
-  height: 400px;
+  height: 300px;
   background: #8a41ff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2299,7 +2299,7 @@ ul#top_menu > li a.btn_access.green:hover {
 }
 @media (max-width: 991px) {
   .hero_single.version_2 {
-    height: 400px;
+    height: 300px;
     text-align: center;
   }
 }

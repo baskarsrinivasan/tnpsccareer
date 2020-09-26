@@ -8,7 +8,7 @@
 	                    
 	                      
 	                   
-	                     <div class="col-xl-12 col-lg-12" style="padding-top: 80px;text-align: center;">
+	                     <div class="col-xl-12 col-lg-12" style="padding-top: 20px;text-align: center;">
 	                    	
 	                    	<h2 style="color:#fff;" title="BUILD YOUR DREAM JOB HERE">BUILD YOUR DREAM JOB HERE</h2>
 	                        
@@ -34,7 +34,7 @@
 	                    <!-- <img src="<?php echo $row->image?>" data-src="<?php echo $row->image?>" class="img-fluid lazy" alt=""> -->
 	                    <a title="Tnpsc Career <?php echo $row->exams_name?>" href="<?php echo base_url()?>exam/<?php echo $row->id?>" class="strip_info">
 	                        <div class="item_title">
-	                            <h3><?php echo $row->exams_name?></h3>
+	                            <h3 class="upper"><?php echo $row->exams_name?></h3>
 	                            
 	                        </div>
 	                    </a>
@@ -128,7 +128,7 @@
     <tbody>
     	<?php foreach($exam_notifications as $notifications){?>
       <tr>
-        <td ><a style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>notification_details/<?php echo $notifications->id;?>"><?php echo substr($notifications->exam_notification_name,0,30);?>..</a><span style="margin-left: 20px"></span></td>
+        <td ><a title="<?php echo $notifications->exam_notification_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>notification_details/<?php echo $notifications->id;?>"><?php echo substr($notifications->exam_notification_name,0,30);?>..</a><span style="margin-left: 20px"></span></td>
         <td>(Posted Date:<?php echo date("d-m-Y", strtotime($notifications->createddate));?>)</td>
         
        
