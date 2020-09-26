@@ -15,8 +15,8 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
     
 } else {
     $hostname = 'localhost';
-    $username = 'tnpsccar_root';
-    $password = 'Password!23';
+    $username = 'tnpsccar_care';
+    $password = 'Welcome!23';
     $database = 'tnpsccar_tnpsc_career';
     $environment = 'production';
 }
