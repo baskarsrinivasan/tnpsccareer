@@ -125,6 +125,7 @@
     <script src="<?php echo base_url()?>/assets/assets/validate.js"></script>
     <script src="<?php echo base_url()?>/assets/js/modernizr.min.js"></script>
     <script src="<?php echo base_url()?>/assets/js/video_header.min.js"></script>
+    <script src="<?php echo base_url()?>assets/js/specific_detail.min.js"></script>
 <script src="<?php echo base_url()?>/assets/js/sticky_sidebar.min.js"></script>
     <script src="<?php echo base_url()?>/assets/js/specific_listing.min.js"></script>
     <script src="<?php echo base_url()?>/assets/js/isotope.min.js"></script>
