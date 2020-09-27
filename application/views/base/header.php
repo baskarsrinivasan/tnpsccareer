@@ -24,6 +24,7 @@
     <!-- SPECIFIC CSS -->
     <link href="<?php echo base_url()?>/assets/css/home.css" rel="stylesheet">
  <link href="<?php echo base_url()?>/assets/css/listing.css" rel="stylesheet">
+ <link href="<?php echo base_url()?>assets/css/detail-page.css" rel="stylesheet">
     <!-- YOUR CUSTOM CSS -->
     <link href="<?php echo base_url()?>/assets/css/custom.css" rel="stylesheet">
      <link href="<?php echo base_url()?>/assets/css/help.css" rel="stylesheet">
