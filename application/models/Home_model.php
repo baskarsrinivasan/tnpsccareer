@@ -15,7 +15,7 @@ class Home_model extends CI_Model
 	 */
 public function exam_syllabus($id)
 	{
-		     $this->db->select('*');
+		     $this->db->select('*,es.image as image');
             $this->db->from('exam_syllabus as es');
             $this->db->join('exams as e','e.id=es.exam_id');
            
