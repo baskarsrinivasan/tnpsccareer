@@ -1660,7 +1660,7 @@ hr {
 
 /*General links color*/
 a {
-  color: #FF3A65;
+  color: #000;
   text-decoration: none;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;

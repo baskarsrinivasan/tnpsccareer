@@ -142,7 +142,7 @@
       </tr>
     </tbody>
   </table>
-  <p style="padding-top: 30px;text-align: center;"><a class="button_link1" href="<?php echo base_url()?>notifications">View More...</a></p>
+  <p style="padding-top: 10px;text-align: center;"><a class="button_link1" href="<?php echo base_url()?>notifications">View More...</a></p>
  
 </div>
 	               
