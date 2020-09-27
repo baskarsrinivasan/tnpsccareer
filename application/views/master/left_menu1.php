@@ -1,31 +1,27 @@
-<aside class="col-lg-3" id="sidebar_fixed">
-                    <div class="filter_col">
-                        <div class="inner_bt"><a href="#" class="open_filters"><i class="icon_close"></i></a></div>
-                        <div class="filter_type">
-                            <h4 style="text-transform: uppercase;padding:10px;margin-top: 30px"><a href="#filter_1" data-toggle="collapse" class="opened">Exams</a></h4>
-                            <div class="collapse show" id="filter_1">
-                                <ul>
-                                    <?php foreach($exams as $row){?>
-                                    <li style="">
-                                        <label class="container_check">
 
-                                            <a title="<?php echo $row->exams_name;?>" href="<?php echo base_url()?>exam/<?php echo $row->id;?>" style="color:#000"><?php echo $row->exams_name;?></a>
-                                         
-                                        </label>
-                                    </li>
-                                   <?php } ?>
-                                   
-                                </ul>
-                            </div>
-                            <!-- /filter_type -->
+<div class="col-xl-4 col-lg-5">
+                    <div class="box_booking">
+                        <div class="head">
+                            <h3 class="upper" style="padding-top:40px;">Exams</h3>
+                            
+                           
                         </div>
-                        <!-- /filter_type -->
-                      
-                        <!-- /filter_type -->
-                       
-                        <!-- /filter_type -->
-                        
-                        <!-- /filter_type -->
-                       
+                        <!-- /head -->
+                        <div class="main">
+                       <div class="services_list clearfix">
+                                                    <ul>
+                                                        <?php foreach($exams as $row){?>
+                                                        <li><a title="<?php echo $row->exams_name;?> Syllabus" href="<?php echo base_url()?>exam/<?php echo $row->id;?>" style="color:#000"><?php echo $row->exams_name;?></a></li>
+                                                        <?php } ?>
+                                                       
+                                                    </ul>
+                                                </div>
+
                     </div>
-                </aside>
+                    </div>
+                    <!-- /box_booking -->
+                  
+                   
+                </div>
+
+ 
