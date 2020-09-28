@@ -37,7 +37,7 @@
                                                         <div class="row">
                                                              <?php foreach($exam_currentaffairs as $currentaffairs){?>
                                                             <div class="col-md-2">
-                                                                <a style="color:blue;font-size: 18px" href="<?php echo base_url()?>currentaffairs_details/<?php echo $currentaffairs->id;?>"><?php echo date("d-m-Y", strtotime($currentaffairs->createddate));?></a>
+                                                                <a style="color:blue;font-size: 18px" href="<?php echo base_url()?>currentaffairs_details/<?php echo $currentaffairs->date;?>"><?php echo date("d-m-Y", strtotime($currentaffairs->createddate));?></a>
                                                             </div>
                                                              <?php } ?>
                                                         </div>
