@@ -61,7 +61,7 @@ public function exam_syllabus($id)
             $this->db->where('es.date',$id);
             $query = $this->db->get();
         $result = $query->result();
-        //print_r($result);exit();
+       
         return $result;
 
 	}
