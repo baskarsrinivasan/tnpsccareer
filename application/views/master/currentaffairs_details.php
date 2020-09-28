@@ -4,7 +4,7 @@
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
   width: 100%;
   border: none;
   text-align: left;
@@ -53,7 +53,7 @@
                             <div class="content_more">
                                 <?php foreach($exam_currentaffairs_details as $row) { ?>
                                 <?php echo $row->exam_currentaffairs_name;?>
-                                <button class="accordion" style="margin-top:10px">+</button>
+                                <button class="accordion" style="margin:10px 0"> + Answer & Explanation</button>
 <div class="panel">
   <p><?php echo $row->exam_currentaffairs_des;?></p>
 </div>
