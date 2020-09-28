@@ -70,7 +70,7 @@ class Home extends CI_Controller
         $id=$this->uri->segment('2');
         $view_data['exams'] = $this->mcommon->records_all('exams',array('is_active'=>1),  $order_by='');
         $view_data['exam_notifications'] = $this->mcommon->records_all('exam_notification',array('is_active'=>1),  $order_by='');
-        $view_data['exam_currentaffairs'] = $this->home_model->getcurrentaffairs1();
+        $view_data['exam_currentaffairs'] = $this->home_model->getcurrentaffairs1($id);
       $view_data['exam_syllabus'] = $this->home_model->exam_syllabus($id);
         $view_data['exam_notification'] = $this->home_model->exam_notification($id);
        
