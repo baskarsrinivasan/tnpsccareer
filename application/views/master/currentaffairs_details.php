@@ -1,4 +1,4 @@
-<?php foreach($exam_currentaffairs_details as $row1){}?>
+<?php foreach($exam_currentaffairs_details as $row){}?>
     
     <main class="bg_color">
          <div class="hero_single version_2">
@@ -29,7 +29,7 @@
                             
 
                             <div class="content_more">
-                                <?php echo $row1->exam_currentaffairs_des;?>
+                                <?php echo $row->exam_currentaffairs_des;?>
                             </div>
                             <!-- /content_more -->
                             
