@@ -102,7 +102,7 @@ public function exam_syllabus($id)
     {
              $this->db->select('*');
             $this->db->from('exam_currentaffairs as es');
-           $this->db->group_by('date');
+           $this->db->group_by('es.date');
             $query = $this->db->get();
         $result = $query->result();
         //print_r($result);exit();
