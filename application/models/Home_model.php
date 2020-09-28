@@ -58,7 +58,7 @@ public function exam_syllabus($id)
             $this->db->from('exam_currentaffairs as es');
            
            
-            $this->db->where('es.id',$id);
+            $this->db->where('es.date',$id);
             $query = $this->db->get();
         $result = $query->result();
         //print_r($result);exit();

@@ -1,5 +1,30 @@
 <?php foreach($exam_currentaffairs_details as $row){}?>
-    
+    <style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
     <main class="bg_color">
          <div class="hero_single version_2">
             <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
@@ -29,7 +54,14 @@
                             
 
                             <div class="content_more">
-                                <?php echo $row->exam_currentaffairs_des;?>
+                                <?php echo $row->exam_currentaffairs_name;?>
+                                <button class="accordion" style="margin-top:10px">+</button>
+<div class="panel">
+  <p><?php echo $row->exam_currentaffairs_des;?></p>
+</div>
+
+
+                                
                             </div>
                             <!-- /content_more -->
                             
@@ -48,4 +80,19 @@
     </main>
     <!-- /main -->
 
-    
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
