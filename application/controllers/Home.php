@@ -20,7 +20,8 @@ class Home extends CI_Controller
     {
         $view_data['exams'] = $this->mcommon->records_all('exams',array('is_active'=>1),  $order_by='');
          $view_data['exam_notifications'] = $this->home_model->getnotification();
-        $view_data['exam_currentaffairs'] = $this->home_model->getcurrentaffairs();
+        $view_data['exam_currentaffairs'] = $this->home_model->getcurrentaffairs1();
+        
         $view_data['exam_syllabus'] = $this->home_model->getsyllabus();
 
         /*$language_id = ($this->session->userdata('site_lang') == 'english') ? '301' : '302';
@@ -73,7 +74,7 @@ class Home extends CI_Controller
         $view_data['exam_currentaffairs'] = $this->home_model->getcurrentaffairs1();
       $view_data['exam_syllabus'] = $this->home_model->exam_syllabus($id);
         $view_data['exam_notification'] = $this->home_model->exam_notification($id);
-       
+       /*$view_data['exam_currentaffairs1'] = $this->home_model->getcurrentaffairs11();*/
         $this->load->view('base/header',$view_data);
         $this->load->view('master/currentaffairs',$view_data);
         $this->load->view('base/footer');

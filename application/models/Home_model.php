@@ -59,6 +59,7 @@ public function exam_syllabus($id)
            
            
             $this->db->where('es.date',$id);
+            $this->db->order_by('es.id','desc');
             $query = $this->db->get();
         $result = $query->result();
        
