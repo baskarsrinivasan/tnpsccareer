@@ -51,13 +51,13 @@
                             
 
                             <div class="content_more">
-                                <?php foreach($exam_currentaffairs_details as $row) { ?>
-                                <?php echo $row->exam_currentaffairs_name;?>
+                                <?php $i=1; foreach($exam_currentaffairs_details as $row) { ?>
+                                <?php echo $i?>.<?php echo $row->exam_currentaffairs_name;?>
                                 <button class="accordion" style="margin:10px 0"> + Answer & Explanation</button>
 <div class="panel">
   <p><?php echo $row->exam_currentaffairs_des;?></p>
 </div>
-<?php } ?>
+<?php $i=$i+1; } ?>
 
                                 
                             </div>
