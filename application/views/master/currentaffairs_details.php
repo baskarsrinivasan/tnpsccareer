@@ -1,4 +1,4 @@
-<?php foreach($exam_currentaffairs_details as $row){}?>
+
     <style>
 .accordion {
   background-color: #eee;
@@ -44,22 +44,20 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-7">
                     <div class="box_general">
-                         <div>
-                            <img  src="<?php echo $row->image;?>"  class="img-fluid" >
-                           
-                        </div>
+
                         <div class="main_info_wrapper">
                             
                             <!-- /main_info_wrapper -->
                             
 
                             <div class="content_more">
+                                <?php foreach($exam_currentaffairs_details as $row) { ?>
                                 <?php echo $row->exam_currentaffairs_name;?>
                                 <button class="accordion" style="margin-top:10px">+</button>
 <div class="panel">
   <p><?php echo $row->exam_currentaffairs_des;?></p>
 </div>
-
+<?php } ?>
 
                                 
                             </div>
