@@ -61,7 +61,7 @@
 	    <div class="row">
 	        
 	        <div class="col-md-6">
-	        <div class="row" style="border:1px solid #44207f">
+	        <div class="" style="border:1px solid #44207f">
 	            <div class="col-12" style="background: #44207f">
 	                <div class="" style="padding-top: 10px">
 					
@@ -69,45 +69,20 @@
 					
 				</div>
 	            </div>
-	            <div class="col-md-12">
-	                
-	                   
-	                           <div class="container">
-            
-  <table class="table">
-  	<!-- <thead>
-    <tr style="color:#000;font-size: 20px">
-        <th>DETAILS</th>
-        <th>POSTED DATE</th>
-      
-      </tr>
-      </thead> -->
-    <tbody>
-    	<?php foreach($exam_currentaffairs as $currentaffairs){
-
-    		?>
-      <tr>
-        <td ><a title="<?php echo $currentaffairs->exam_currentaffairs_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>currentaffairs_details/<?php echo $currentaffairs->id;?>"><?php echo substr($currentaffairs->exam_currentaffairs_name,0,30);?>..</a><span style="margin-left: 20px"></span></td>
-        <td>(Posted Date:<?php echo date("d-m-Y", strtotime($currentaffairs->createddate));?>)</td>
-       
-      </tr>
-  <?php } ?>
-       <tr>
-      	
-      	
-      </tr>
-    </tbody>
-    <tfoot>
-    	
-    	
-    </tfoot>
-  </table>
-  <p style="padding-top:10px;text-align: center;"><a class="button_link" href="<?php echo base_url()?>currentaffairs">View More...</a></p>
-</div>
-	               
-	            </div>
-	            
+	            <div class="container">
+	              <div class="row">
+	          
+                                                             <?php foreach($exam_currentaffairs as $currentaffairs){?>
+                                                            <div class="col-md-3" style="padding: 10px">
+                                                                <a style="color:blue;font-size: 18px" href="<?php echo base_url()?>currentaffairs_details/<?php echo $currentaffairs->date;?>"><?php echo date("d-m-Y", strtotime($currentaffairs->date));?></a>
+                                                            </div>
+                                                             <?php } ?>
+                                                         </div>
+                                                         </div>
+                                                       
+	             <p style="padding-top: 10px;text-align: center;"><a class="button_link1" href="<?php echo base_url()?>currentaffairs">View More...</a></p>
 	        </div>
+
 	        </div>
 	        <div class="col-md-6">
 	        <div class="row" style="border:1px solid #44207f;margin-left:5px">

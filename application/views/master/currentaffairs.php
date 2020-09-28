@@ -1,4 +1,4 @@
-<?php foreach($exam_syllabus as $row){}?>
+ <?php foreach($exam_currentaffairs as $c_dates){}?>
     
     <main class="bg_color">
          <div class="hero_single version_2">
@@ -35,7 +35,9 @@
                                                     <ul>
 
                                                         <div class="row">
+                                                            
                                                              <?php foreach($exam_currentaffairs as $currentaffairs){?>
+
                                                             <div class="col-md-2">
                                                                 <a style="color:blue;font-size: 18px" href="<?php echo base_url()?>currentaffairs_details/<?php echo $currentaffairs->date;?>"><?php echo date("d-m-Y", strtotime($currentaffairs->date));?></a>
                                                             </div>
