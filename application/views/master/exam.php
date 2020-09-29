@@ -32,7 +32,7 @@
                                 <?php echo $row->exam_syllabus_des;?>
                             </div>
                             <!-- /content_more -->
-                            <a href="#0" class="show_hide" data-content="toggle-text">Read More</a>
+                            
                         </div>
                         <!-- /main_info -->
                     </div>
