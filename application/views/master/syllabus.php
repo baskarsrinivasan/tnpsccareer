@@ -1,4 +1,4 @@
-<?php foreach($exam_syllabus as $row){}?>
+<!-- <?php foreach($exam_syllabus as $row){}?> -->
     
     <main class="bg_color">
          <div class="hero_single version_2">
@@ -34,7 +34,7 @@
                             <div class="services_list clearfix">
                                                     <ul>
                                                         <?php foreach($exam_syllabus as $syllabus){?>
-                        <li class="upper"><a href="<?php echo base_url()?>exam/<?php echo $syllabus->id;?>"><i class="icon_compass_alt"></i><span style="padding-left: 5px"/><?php echo $syllabus->exam_syllabus_name;?></a></li>
+                        <li class="upper"><a href="<?php echo base_url()?>exam/<?php echo $syllabus->exam_id;?>"><i class="icon_compass_alt"></i><span style="padding-left: 5px"/><?php echo $syllabus->exam_syllabus_name;?></a></li>
                     <?php } ?>
                                                        
                                                     </ul>
