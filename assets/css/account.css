@@ -1,5 +1,5 @@
 #login_bg, #register_bg {
-  background: url(images/bg1.jpg) center left no-repeat fixed;
+  background: url(images/1.png) left no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,7 +22,7 @@
   min-height: 100vh;
 }
 #login_bg1, #register_bg1 {
-  background: url(images/bg1.jpg) center left no-repeat fixed;
+  background: url(images/register.png) center left no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
