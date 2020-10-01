@@ -19,9 +19,15 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-7">
                     <div class="box_general">
+
                          <div>
                             <img  src="<?php echo $row->image;?>"  class="img-fluid" >
-                           
+                           <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = 'bafa151515-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
                         </div>
                         <div class="main_info_wrapper">
                             
@@ -31,6 +37,7 @@
                             <div class="content_more">
                                 <?php echo $row->exam_syllabus_des;?>
                             </div>
+                            
                             <!-- /content_more -->
                             
                         </div>

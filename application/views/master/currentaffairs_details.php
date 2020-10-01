@@ -45,7 +45,7 @@
 
                 <div class="col-xl-8 col-lg-7">
                   <script type="text/javascript" language="javascript">
-      var aax_size='850x90';
+      var aax_size='728x90';
       var aax_pubname = 'bafa151515-21';
       var aax_src='302';
     </script>
