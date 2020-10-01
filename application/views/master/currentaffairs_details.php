@@ -42,7 +42,14 @@
         </div>
         <div class="container margin_detail">
             <div class="row">
+
                 <div class="col-xl-8 col-lg-7">
+                  <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = 'bafa151515-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
                     <div class="box_general">
 
                         <div class="main_info_wrapper">
