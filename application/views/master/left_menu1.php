@@ -15,14 +15,12 @@
                                                         <?php } ?>
                                                        
                                                     </ul>
-                                                    <iframe style="width:100%;height:240px;" marginwidth="400px" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=bafa151515-21&marketplace=amazon&region=IN&placement=9352832167&asins=9352832167&linkId=0ea6a5d9c97607d306390ad059485b01&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
-    </iframe>
                                                 </div>
 
                     </div>
                     </div>
                     <!-- /box_booking -->
-                  
+                  <a target="_blank"  href="https://www.amazon.in/gp/product/B07DVDNGCZ/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07DVDNGCZ&linkCode=as2&tag=bafa151515-21&linkId=99ebac20e28f056b5330ac800c80b56d"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=B07DVDNGCZ&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=bafa151515-21" ></a><img src="//ir-in.amazon-adsystem.com/e/ir?t=bafa151515-21&l=am2&o=31&a=B07DVDNGCZ" width="100%" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
                    
                 </div>
 
