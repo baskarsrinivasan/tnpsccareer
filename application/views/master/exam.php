@@ -15,8 +15,6 @@
                 </div>
             </div>
         </div>
-     
-    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
         <div class="container margin_detail">
             <div class="row">
                 <div class="col-xl-8 col-lg-7">
@@ -31,7 +29,7 @@
                             
 
                             <div class="content_more">
-                                <?php echo $r->exam_syllabus_des;?>
+                                <?php echo $row->exam_syllabus_des;?>
                             </div>
                             <!-- /content_more -->
                             
