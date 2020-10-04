@@ -10,6 +10,7 @@ class Login extends CI_Controller
         $this->load->helper('email_helper');
         $this->load->library('session');
         $this->load->library('form_validation');
+        $this->load->library('email');
        
         
        
@@ -119,52 +120,29 @@ class Login extends CI_Controller
                 
                             ];
 
-                    $insert1 = $this->mcommon->common_insert('users', $user_data);
+                    //$insert1 = $this->mcommon->common_insert('users', $user_data);
                    
                      $this->session->set_userdata($user_data);
                     //echo $this->db->last_query();die();
                     
                          $otp_insert=array(
                         'otp'=>$otp,
-                        'user_id'=>$user_id,
+                      
+                        'mobile'=>$mobile,
                         'status'=>'0'
 
                     );
                         $insert = $this->mcommon->common_insert('otp', $otp_insert);
                         if($insert > 0)
                         {
-                        /*$url = "https://api.smsglobal.com/http-api.php?action=sendsms&user=zst53arz&password=E0o7rcok&from=care4you&to=+971$mobile&text=$otp";
-
-
-
-
-                    $ch = curl_init(); 
-                    curl_setopt($ch, CURLOPT_URL,$url); 
-                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                    $output = curl_exec($ch);
-                    curl_close($ch);
-                   */
-$this->db->select("*");
-        $this->db->from("users");
-        $this->db->where("email",$email);
-        $result=$this->db->get()->result();
-                      
-                     // $msg = $this->load->view('base/register_email', $customer_details1, true);
-                      $this->load->library('email');
-
-foreach($result as $row)
-      {
-$cust_id=$row->user_id;
-$useremail=$row->email;
-      }
-
+                        
  
 
 
-           $user_data['password']=$password;
+          /* $user_data['password']=$password;
           
-            $user_data['username']=$useremail;
-            $msg=$this->load->view('base/register_email',$user_data,true);
+            $user_data['username']=$email;*/
+            /*$msg=$this->load->view('base/register_email',$user_data,true);*/
                             $config['protocol'] = 'smtp';
                             $config['smtp_host'] = 'smtp-relay.sendinblue.com';
                             $config['smtp_port'] = '587';
@@ -179,7 +157,7 @@ $useremail=$row->email;
                             $this->email->from('info@care4you.ae', 'care4you');
                             $this->email->to($email);
                             $this->email->subject('Register Conformation');
-                            $this->email->message($msg);
+                            $this->email->message($otp);
                             $mail_status = $this->email->send();
                             redirect('home');
     //$customer_detail['default']=$this->mcommon->get_users($user_id);                         
@@ -212,7 +190,7 @@ $useremail=$row->email;
             'title' => $this->lang->line('login_page_title'),
         );
         /*$data['link'] = $this->facebook->login_url();*/
-        $this->load->view('base/register_template', $data);
+        redirect('home');
     }
   public function logout() {
 

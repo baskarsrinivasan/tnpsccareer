@@ -59,37 +59,54 @@
 			</div>
 			 <div class="container">
 	    <div class="row">
-	        
-	        <div class="col-md-6">
-	        <div class="" style="border:1px solid #44207f">
-	            <div class="col-12" style="background: #44207f">
-	                <div class="" style="padding-top: 10px">
-					
-					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;">Current Affairs</h4>
-					
-				</div>
-	            </div>
-	            <div class="container">
-	              <div class="row">
-	          
-                                                             <?php foreach($exam_currentaffairs as $currentaffairs){?>
-                                                            <div class="col-md-3" style="padding: 10px">
-                                                                <a style="color:blue;font-size: 18px" href="<?php echo base_url()?>currentaffairs_details/<?php echo $currentaffairs->date;?>"><?php echo date("d-m-Y", strtotime($currentaffairs->date));?></a>
-                                                            </div>
-                                                             <?php } ?>
-                                                         </div>
-                                                         </div>
-                                                       
-	             <p style="padding-top: 10px;text-align: center;"><a class="button_link1" href="<?php echo base_url()?>currentaffairs">View More...</a></p>
-	        </div>
-
-	        </div>
-	        <div class="col-md-6">
-	        <div class="row" style="border:1px solid #44207f;margin-left:5px">
+	      <div class="col-md-4">
+	        <div  style="border:1px solid #44207f;margin-left:5px">
 	            <div class="col-12" style="background:#44207f">
 	                <div class="" style="padding-top: 10px">
 					
-					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;">notifications</h4>
+					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;padding: 0 0 10px 0">syllabus</h4>
+					
+				</div>
+	            </div>
+	            <div class="col-md-12">
+	                
+	                   
+	                           <div class="container">
+            
+  <table class="table">
+    
+    <tbody>
+    	<?php foreach($exam_syllabus as $syllabus){?>
+      <tr>
+        <td ><a title="<?php echo $syllabus->exam_syllabus_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>exam/<?php echo $syllabus->exam_id;?>"><?php echo $syllabus->exam_syllabus_name;?></a><span style="margin-left: 20px"></span></td>
+        
+        
+       
+       
+      </tr>
+      
+  <?php } ?>
+      <tr>
+      	
+      	
+      </tr>
+    </tbody>
+  </table>
+  <p style="padding-top: 10px;text-align: center;"><a class="button_link1" href="<?php echo base_url()?>notifications">View More...</a></p>
+ 
+</div>
+	               
+	            </div>
+	            
+	        </div>
+	        </div>  
+	       
+	        <div class="col-md-4">
+	        <div  style="border:1px solid #44207f;margin-left:5px">
+	            <div class="col-12" style="background:#44207f">
+	                <div class="" style="padding-top: 10px">
+					
+					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;padding: 0 0 10px 0;">notifications</h4>
 					
 				</div>
 	            </div>
@@ -125,7 +142,47 @@
 	            
 	        </div>
 	        </div>
-	        
+	        <div class="col-md-4">
+	        <div class="" style="border:1px solid #44207f;margin-left:5px">
+	            <div class="col-12" style="background:#44207f">
+	                <div class="" style="padding-top: 10px">
+					
+					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;padding: 0 0 10px 0">notifications</h4>
+					
+				</div>
+	            </div>
+	            <div class="col-md-12">
+	                
+	                   
+	                           <div class="container">
+            
+  <table class="table">
+    
+    <tbody>
+    	<?php foreach($exam_notifications as $notifications){?>
+      <tr>
+        <td ><a title="<?php echo $notifications->exam_notification_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>notification_details/<?php echo $notifications->id;?>"><?php echo substr($notifications->exam_notification_name,0,30);?>..</a><span style="margin-left: 20px"></span></td>
+        <td>(Posted Date:<?php echo date("d-m-Y", strtotime($notifications->createddate));?>)</td>
+        
+       
+       
+      </tr>
+      
+  <?php } ?>
+      <tr>
+      	
+      	
+      </tr>
+    </tbody>
+  </table>
+  <p style="padding-top: 10px;text-align: center;"><a class="button_link1" href="<?php echo base_url()?>notifications">View More...</a></p>
+ 
+</div>
+	               
+	            </div>
+	            
+	        </div>
+	        </div>
 	    </div>
 	    </div>
 	    </div>
