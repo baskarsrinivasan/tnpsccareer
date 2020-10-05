@@ -159,7 +159,7 @@
     <tbody>
     	<?php foreach($exam_question_paper as $question_paper){?>
       <tr>
-        <td ><a title="<?php echo $question_paper->exam_questions_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>question_paper"><?php echo $question_paper->exams_name;?></a></td>
+        <td ><a title="<?php echo $question_paper->exam_questions_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>question_paper/<?php echo $question_paper->exam_id;?>"><?php echo $question_paper->exams_name;?></a></td>
         
         
        
