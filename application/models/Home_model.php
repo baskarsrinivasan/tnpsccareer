@@ -119,6 +119,7 @@ public function exam_syllabus($id)
              $this->db->select('*,es.exams_name as exams_name');
             $this->db->from('exam_questions as eq');
             $this->db->join('exams as es','es.id=eq.exam_id');
+            $this->db->group_by('es.id');
            $this->db->limit('10');
             $query = $this->db->get();
         $result = $query->result();
