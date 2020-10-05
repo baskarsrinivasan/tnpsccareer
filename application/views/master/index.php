@@ -64,7 +64,7 @@
 	            <div class="col-12" style="background:#44207f">
 	                <div class="" style="padding-top: 10px">
 					
-					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;padding: 0 0 10px 0">syllabus</h4>
+					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;padding: 0 0 10px 0;text-align: center;">syllabus</h4>
 					
 				</div>
 	            </div>
@@ -106,7 +106,7 @@
 	            <div class="col-12" style="background:#44207f">
 	                <div class="" style="padding-top: 10px">
 					
-					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;padding: 0 0 10px 0;">notifications</h4>
+					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;padding: 0 0 10px 0;text-align: center;">notifications</h4>
 					
 				</div>
 	            </div>
@@ -120,9 +120,8 @@
     <tbody>
     	<?php foreach($exam_notifications as $notifications){?>
       <tr>
-        <td ><a title="<?php echo $notifications->exam_notification_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>notification_details/<?php echo $notifications->id;?>"><?php echo substr($notifications->exam_notification_name,0,30);?>..</a><span style="margin-left: 20px"></span></td>
-        <td>(Posted Date:<?php echo date("d-m-Y", strtotime($notifications->createddate));?>)</td>
-        
+        <td ><a title="<?php echo $notifications->exam_notification_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>notification_details/<?php echo $notifications->id;?>"><?php echo substr($notifications->exam_notification_name,0,30);?>..</a>
+        </td>
        
        
       </tr>
@@ -147,7 +146,7 @@
 	            <div class="col-12" style="background:#44207f">
 	                <div class="" style="padding-top: 10px">
 					
-					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;padding: 0 0 10px 0">notifications</h4>
+					<h4 title="Tnpsc Career Popular Exams" style="color:#fff;text-transform: uppercase;padding: 0 0 10px 0;text-align: center;">Pervious Question Paper</h4>
 					
 				</div>
 	            </div>
@@ -161,8 +160,8 @@
     <tbody>
     	<?php foreach($exam_notifications as $notifications){?>
       <tr>
-        <td ><a title="<?php echo $notifications->exam_notification_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>notification_details/<?php echo $notifications->id;?>"><?php echo substr($notifications->exam_notification_name,0,30);?>..</a><span style="margin-left: 20px"></span></td>
-        <td>(Posted Date:<?php echo date("d-m-Y", strtotime($notifications->createddate));?>)</td>
+        <td ><a title="<?php echo $notifications->exam_notification_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>notification_details/<?php echo $notifications->id;?>"><?php echo substr($notifications->exam_notification_name,0,30);?>..</a></td>
+        
         
        
        

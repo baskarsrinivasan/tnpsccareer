@@ -1,4 +1,5 @@
 <?php foreach($exam_syllabus as $row){}?>
+<?php foreach($advertising as $ad_row){}?>
     
     <main class="bg_color">
          <div class="hero_single version_2">
@@ -22,12 +23,7 @@
 
                          <div>
                             <img  src="<?php echo $row->image;?>"  class="img-fluid" >
-                           <script type="text/javascript" language="javascript">
-      var aax_size='728x90';
-      var aax_pubname = 'bafa151515-21';
-      var aax_src='302';
-    </script>
-    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+                          <?php echo $ad_row->advertising_des?>
                         </div>
                         <div class="main_info_wrapper">
                             

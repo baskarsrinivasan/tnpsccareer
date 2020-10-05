@@ -111,5 +111,17 @@ public function exam_syllabus($id)
         return $result;
 
     }
-		
+public function advertising()
+    {
+             $this->db->select('*');
+            $this->db->from('advertising as es');
+           
+           
+            
+            $query = $this->db->get();
+        $result = $query->result();
+        //print_r($result);exit();
+        return $result;
+
+    }		
 }

@@ -47,13 +47,10 @@
 				</div>
 				<div class="divider"><span>Or</span></div>
 				<div class="form-group">
-					<input type="email" class="form-control" title="tnpsc career email" name="email" id="email" placeholder="Email">
+					<input type="text" class="form-control" title="tnpsc career email" name="email" id="email" placeholder="Email">
 					<i class="icon_mail_alt"></i>
 				</div>
-				<div class="form-group">
-					<input type="password" class="form-control" title="tnpsc career password" name="password" id="password" value="" placeholder="Password">
-					<i class="icon_lock_alt"></i>
-				</div>
+				
 				<div class="clearfix add_bottom_30">
 					<div class="checkboxes float-left">
 						<label class="container_check">Remember me
