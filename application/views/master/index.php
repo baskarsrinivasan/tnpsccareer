@@ -92,8 +92,7 @@
       </tr>
     </tbody>
   </table>
-  <p style="padding-top: 10px;text-align: center;"><a class="button_link1" href="<?php echo base_url()?>notifications">View More...</a></p>
- 
+  
 </div>
 	               
 	            </div>
@@ -133,7 +132,7 @@
       </tr>
     </tbody>
   </table>
-  <p style="padding-top: 10px;text-align: center;"><a class="button_link1" href="<?php echo base_url()?>notifications">View More...</a></p>
+ 
  
 </div>
 	               
@@ -158,9 +157,9 @@
   <table class="table">
     
     <tbody>
-    	<?php foreach($exam_notifications as $notifications){?>
+    	<?php foreach($exam_question_paper as $question_paper){?>
       <tr>
-        <td ><a title="<?php echo $notifications->exam_notification_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>notification_details/<?php echo $notifications->id;?>"><?php echo substr($notifications->exam_notification_name,0,30);?>..</a></td>
+        <td ><a title="<?php echo $question_paper->exam_questions_name;?>" style="color:#44207f;font-size: 16px" href="<?php echo base_url()?>question_paper"><?php echo substr($question_paper->exams_name,0,30);?>..</a></td>
         
         
        
@@ -174,7 +173,7 @@
       </tr>
     </tbody>
   </table>
-  <p style="padding-top: 10px;text-align: center;"><a class="button_link1" href="<?php echo base_url()?>notifications">View More...</a></p>
+  
  
 </div>
 	               

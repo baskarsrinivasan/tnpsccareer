@@ -39,6 +39,19 @@ public function exam_syllabus($id)
         return $result;
 
 	}
+    public function exam_question_paper($id)
+    {
+             $this->db->select('*');
+            $this->db->from('exam_question as es');
+            $this->db->join('exams as e','e.id=es.exam_id');
+           
+            $this->db->where('es.exam_id',$id);
+            $query = $this->db->get();
+        $result = $query->result();
+        //print_r($result);exit();
+        return $result;
+
+    }
 	public function exam_notification_details($id)
 	{
 		     $this->db->select('*');
@@ -52,6 +65,19 @@ public function exam_syllabus($id)
         return $result;
 
 	}
+    public function exam_questions_details($id)
+    {
+             $this->db->select('*');
+            $this->db->from('exam_questions as es');
+           
+           
+            $this->db->where('es.id',$id);
+            $query = $this->db->get();
+        $result = $query->result();
+        //print_r($result);exit();
+        return $result;
+
+    }
 	public function exam_currentaffairs_details($id)
 	{
 		     $this->db->select('*');
@@ -88,6 +114,30 @@ public function exam_syllabus($id)
         return $result;
 
 	}
+    public function getquestion_paper()
+    {
+             $this->db->select('*,es.exams_name as exams_name');
+            $this->db->from('exam_questions as eq');
+            $this->db->join('exams as es','es.id=eq.exam_id');
+           $this->db->limit('10');
+            $query = $this->db->get();
+        $result = $query->result();
+        //print_r($result);exit();
+        return $result;
+
+    }
+    public function get_question_paper()
+    {
+             $this->db->select('*,es.exams_name as exams_name');
+            $this->db->from('exam_questions as eq');
+            $this->db->join('exams as es','es.id=eq.exam_id');
+           $this->db->limit('10');
+            $query = $this->db->get();
+        $result = $query->result();
+        //print_r($result);exit();
+        return $result;
+
+    }
 	public function getsyllabus()
 	{
 		     $this->db->select('*');

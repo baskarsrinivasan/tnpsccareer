@@ -21,6 +21,7 @@ class Home extends CI_Controller
         $view_data['exams'] = $this->mcommon->records_all('exams',array('is_active'=>1),  $order_by='');
          $view_data['exam_notifications'] = $this->home_model->getnotification();
         $view_data['exam_currentaffairs'] = $this->home_model->getcurrentaffairs1();
+        $view_data['exam_question_paper'] = $this->home_model->getquestion_paper();
         
         $view_data['exam_syllabus'] = $this->home_model->getsyllabus();
 
@@ -67,6 +68,18 @@ class Home extends CI_Controller
         $this->load->view('master/notifications',$view_data);
         $this->load->view('base/footer');
     }
+    public function question_paper()
+    {
+        $id=$this->uri->segment('2');
+        $view_data['exams'] = $this->mcommon->records_all('exams',array('is_active'=>1),  $order_by='');
+        $view_data['question_paper'] = $this->mcommon->records_all('exam_questions',array('is_active'=>1),  $order_by='');
+      $view_data['exam_syllabus'] = $this->home_model->exam_syllabus($id);
+        /*$view_data['question_paper'] = $this->home_model->exam_question_paper($id);*/
+       
+        $this->load->view('base/header',$view_data);
+        $this->load->view('master/question_paper',$view_data);
+        $this->load->view('base/footer');
+    }
      public function currentaffairs()
     {
         $id=$this->uri->segment('2');
@@ -103,6 +116,19 @@ class Home extends CI_Controller
         //print_r($view_data['exam_notification_details']);exit();
         $this->load->view('base/header',$view_data);
         $this->load->view('master/notifications_details',$view_data);
+        $this->load->view('base/footer');
+    }
+    public function question_paper_details()
+    {
+        $id=$this->uri->segment('2');
+        $view_data['exams'] = $this->mcommon->records_all('exams',array('is_active'=>1),  $order_by='');
+        $view_data['exam_notifications'] = $this->mcommon->records_all('exam_notification',array('is_active'=>1),  $order_by='');
+        $view_data['exam_syllabus'] = $this->mcommon->records_all('exam_syllabus',array('is_active'=>1),  $order_by='');
+      
+        $view_data['exam_questions_details'] = $this->home_model->exam_questions_details($id);
+        //print_r($view_data['exam_notification_details']);exit();
+        $this->load->view('base/header',$view_data);
+        $this->load->view('master/question_paper_details',$view_data);
         $this->load->view('base/footer');
     }
     public function currentaffairs_details()
