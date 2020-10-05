@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['exam/(:any)'] = 'home/examdetails';
 $route['notification/(:any)'] = 'home/notification';
-$route['question_paper'] = 'home/question_paper';
+$route['question_paper/(:any)'] = 'home/question_paper/(:any)';
 $route['notifications'] = 'home/notifications';
 $route['register'] = 'login/register';
 $route['login'] = 'login/login';

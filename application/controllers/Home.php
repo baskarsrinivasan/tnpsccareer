@@ -72,7 +72,7 @@ class Home extends CI_Controller
     {
         $id=$this->uri->segment('2');
         $view_data['exams'] = $this->mcommon->records_all('exams',array('is_active'=>1),  $order_by='');
-        $view_data['question_paper'] = $this->mcommon->records_all('exam_questions',array('is_active'=>1),  $order_by='');
+        $view_data['question_paper'] = $this->mcommon->records_all('exam_questions',array('is_active'=>1,'exam_id'=>$id),  $order_by='');
       $view_data['exam_syllabus'] = $this->home_model->exam_syllabus($id);
         /*$view_data['question_paper'] = $this->home_model->exam_question_paper($id);*/
        
