@@ -26,6 +26,19 @@ public function exam_syllabus($id)
         return $result;
 
 	}
+    public function exam_syllabus_count($id)
+    {
+             $this->db->select('*,es.image as image');
+            $this->db->from('exam_syllabus as es');
+            $this->db->join('exams as e','e.id=es.exam_id');
+           
+            $this->db->where('es.exam_id',$id);
+            $query = $this->db->get();
+        $result = $query->num_rows();
+        //print_r($result);exit();
+        return $result;
+
+    }
 	public function exam_notification($id)
 	{
 		     $this->db->select('*');

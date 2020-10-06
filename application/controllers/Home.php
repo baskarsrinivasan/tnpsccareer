@@ -39,6 +39,7 @@ class Home extends CI_Controller
         $view_data['exams'] = $this->mcommon->records_all('exams',array('is_active'=>1),  $order_by='');
       $view_data['exam_notification'] = $this->home_model->exam_notification($id);
         $view_data['exam_syllabus'] = $this->home_model->exam_syllabus($id);
+        $view_data['exam_syllabus_count'] = $this->home_model->exam_syllabus_count($id);
         $view_data['advertising'] = $this->home_model->advertising();
        
         $this->load->view('base/header',$view_data);

@@ -1,4 +1,34 @@
-<?php foreach($exam_syllabus as $row){}?>
+<?php if($exam_syllabus_count=='0'){?>
+<div class="" style="background: #44207f;">
+            <div class="" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-10" style="text-align: center;">
+                            <img src="<?php echo base_url();?>assets/img/winner.png" style="margin-top:50px;height:450px">
+                            <h2 class="upper" style="color:#fff;padding-top:0px;text-align: center;">Not Found Syllabus</h2>
+                           
+                            
+                        </div>
+                    </div>
+                    <!-- /row -->
+                </div>
+            </div>
+        </div>
+<?php }
+else
+{
+    ?>
+
+<?php foreach($exam_syllabus as $row){
+
+    
+$exam_id=$row->exam_id;
+}
+$ids= $this->uri->segment('2');
+
+
+?>
+
 <?php foreach($advertising as $ad_row){}?>
     
     <main class="bg_color">
@@ -51,4 +81,4 @@
     </main>
     <!-- /main -->
 
-    
+    <?php } ?>
