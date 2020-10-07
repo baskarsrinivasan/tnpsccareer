@@ -30,6 +30,7 @@
      <link href="<?php echo base_url()?>/assets/css/help.css" rel="stylesheet">
      <link href="<?php echo base_url()?>/assets/css/account.css" rel="stylesheet">
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f4c9ea0dc8707001906e0e1&product=sop' async='async'></script>
+<meta name="verify-admitad" content="f291dff63d" />
 </head>
 
 <body>
