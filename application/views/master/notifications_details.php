@@ -37,7 +37,7 @@
                                 <?php echo $row->exam_notification_des;?>
                             </div>
                             <!-- /content_more -->
-                            
+                            <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f4c9ea0dc8707001906e0e1&product=sop' async='async'></script>
                         </div>
                         <!-- /main_info -->
                     </div>
