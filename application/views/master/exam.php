@@ -55,7 +55,7 @@ $ids= $this->uri->segment('2');
                             <img  src="<?php echo $row->image;?>"  class="img-fluid" >
                           <?php echo $ad_row->advertising_des?>
                         </div>
-                        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d451b0cd47cc57b"></script>
+                      
                         <div class="main_info_wrapper">
                             
                             <!-- /main_info_wrapper -->
