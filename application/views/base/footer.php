@@ -143,5 +143,6 @@
 	<!-- Map -->
     <script src="<?php echo base_url()?>/assets/js/main_map_scripts.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d451b0cd47cc57b"></script>
 </body>
 </html>
