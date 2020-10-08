@@ -8,7 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="TNPSC CAREER(Build Your Dream Job Here),tnpsc exam,tnspc notification,tnpsc syllabus,tnpsc career,tnpsc exam details">
     <meta name="author" content="Tnpsc Career">
-    
+    <meta property="og:title" content="Tnpsc Career" /> 
+<meta property="og:description" content="Exam Details" />
+<meta property="og:image" content="<?php echo base_url()?>/assets/img/register.png" />
+<meta property="og:video" content="http://www.youtube.com/v/1F7DKyFt5pY&fs=1" />
+<meta property="og:video:width" content="560" />
+<meta property="og:video:height" content="340" />
+<meta property="og:video:type" content="application/x-shockwave-flash" />
     <title title="tnpsc career login">TNPSC CAREER(Build Your Dream Job Here)</title>
 
     <!-- Favicons-->
