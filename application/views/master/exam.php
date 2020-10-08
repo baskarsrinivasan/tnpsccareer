@@ -50,12 +50,7 @@ $ids= $this->uri->segment('2');
             <div class="row">
                 <div class="col-xl-8 col-lg-7">
                     <div class="box_general">
-<div class="addthis_toolbox" addthis:url="http://example.com/blog/post/2009/05/01" addthis:title="Hooray!">
-  <a class="addthis_button_compact">Share</a>
-  <a class="addthis_button_email"></a>
-  <a class="addthis_button_facebook"></a>
-  <a class="addthis_button_buzz"></a>
-</div>
+
                          <div>
                             <img  src="<?php echo $row->image;?>"  class="img-fluid" >
                           <?php echo $ad_row->advertising_des?>
