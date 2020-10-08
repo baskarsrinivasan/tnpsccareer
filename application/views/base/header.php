@@ -29,7 +29,7 @@
     <link href="<?php echo base_url()?>/assets/css/custom.css" rel="stylesheet">
      <link href="<?php echo base_url()?>/assets/css/help.css" rel="stylesheet">
      <link href="<?php echo base_url()?>/assets/css/account.css" rel="stylesheet">
-<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d451b0cd47cc57b"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
 </head>
 
 <body>

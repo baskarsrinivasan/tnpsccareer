@@ -49,13 +49,13 @@ $ids= $this->uri->segment('2');
         <div class="container margin_detail">
             <div class="row">
                 <div class="col-xl-8 col-lg-7">
-                    <div class="box_general">
+                    <div class="box_general addthis_sharing_toolbox" data-url="<?php echo $row->id;?>" data-title="<?php echo $row->exam_syllabus_name;?>" data-description="<?php echo $row->exam_syllabus_des;?>" data-media="<?php echo $row->image;?>">
 
                          <div>
                             <img  src="<?php echo $row->image;?>"  class="img-fluid" >
                           <?php echo $ad_row->advertising_des?>
                         </div>
-                      
+
                         <div class="main_info_wrapper">
                             
                             <!-- /main_info_wrapper -->
@@ -81,5 +81,12 @@ $ids= $this->uri->segment('2');
         <!-- /container -->
     </main>
     <!-- /main -->
-
+<script type="text/javascript">
+var addthis_share = {
+   url: "<?php echo base_url()?>exam/<?php echo $row->id;?>",
+   title: "THE TITLE",
+   description: "THE DESCRIPTION",
+   media: "THE IMAGE"
+}
+</script>
     <?php } ?>
