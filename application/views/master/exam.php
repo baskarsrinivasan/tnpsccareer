@@ -30,13 +30,7 @@ $ids= $this->uri->segment('2');
 ?>
 
 <?php foreach($advertising as $ad_row){}?>
-    <meta property="og:title" content="<?php echo $row->exams_name;?>" /> 
-<meta property="og:description" content="<?php echo $row->exam_syllabus_des;?>" />
-<meta property="og:image" content="<?php echo $row->image;?>" />
-
-<meta property="og:image:width" content="560" />
-<meta property="og:image:height" content="640" />
-<!-- <meta property="og:video:type" content="application/x-shockwave-flash" /> -->
+    
     <main class="bg_color">
          <div class="hero_single version_2">
             <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
