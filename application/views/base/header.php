@@ -8,13 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="TNPSC CAREER(Build Your Dream Job Here),tnpsc exam,tnspc notification,tnpsc syllabus,tnpsc career,tnpsc exam details">
     <meta name="author" content="Tnpsc Career">
-    <meta property="og:title" content="AddThis Tour" /> 
-<meta property="og:description" content="Watch the AddThis Tour video." />
-<meta property="og:image" content="http://i2.ytimg.com/vi/1F7DKyFt5pY/default.jpg" />
-<meta property="og:video" content="http://www.youtube.com/v/1F7DKyFt5pY&fs=1" />
-<meta property="og:video:width" content="560" />
-<meta property="og:video:height" content="340" />
-<meta property="og:video:type" content="application/x-shockwave-flash" />
+    
     <title title="tnpsc career login">TNPSC CAREER(Build Your Dream Job Here)</title>
 
     <!-- Favicons-->
