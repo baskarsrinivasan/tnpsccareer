@@ -19,10 +19,8 @@
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="<?php echo base_url()?>/assets/img/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="<?php echo base_url()?>/assets/img/logo.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="<?php echo base_url()?>/assets/img/logo.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="<?php echo base_url()?>/assets/img/logo.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="<?php echo base_url()?>/assets/img/logo.png">
+    
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="600x600" href="<?php echo base_url()?>/assets/img/register.png">
 
     <!-- BASE CSS -->
     <link href="<?php echo base_url()?>/assets/css/bootstrap_customized.min.css" rel="stylesheet">
