@@ -30,7 +30,7 @@ $ids= $this->uri->segment('2');
 ?>
 
 <?php foreach($advertising as $ad_row){}?>
-    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f4c9ea0dc8707001906e0e1&product=sop' async='async'></script>
+    
     <main class="bg_color">
          <div class="hero_single version_2">
             <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
