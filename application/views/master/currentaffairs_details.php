@@ -67,8 +67,9 @@
 <?php $i=$i+1; } ?>
 
                                 
-                            </div>
-                            <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f4c9ea0dc8707001906e0e1&product=sop' async='async'></script>
+                            </div><!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d451b0cd47cc57b"></script>
+
                             <!-- /content_more -->
                             
                         </div>
