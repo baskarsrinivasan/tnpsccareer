@@ -27,7 +27,7 @@
 			</div>
 			<div class="row add_bottom_15">
 				<?php foreach($exams as $row){?>
-	        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+	        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
 	            <div class="strip">
 	                <figure style="background: #44207f">
 	                    
