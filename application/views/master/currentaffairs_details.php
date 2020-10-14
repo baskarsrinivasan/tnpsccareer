@@ -59,7 +59,7 @@
 
                             <div class="content_more">
                                 <?php foreach($exam_currentaffairs_details as $row) { ?>
-                                <?php echo $i?>.<?php echo $row->exam_currentaffairs_name;?>
+                               <?php echo $row->exam_currentaffairs_name;?>
                                 <?php if($row->exam_currentaffairs_des!='') { ?>
                                 <button class="accordion" style="margin:10px 0"> + Answer & Explanation</button>
 <div class="panel">
